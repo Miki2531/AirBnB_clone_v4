@@ -2,7 +2,7 @@
 # transfers file from client to a server
 #
 #variables
-path="(cd "$(dirname "${BASH_SOURCE[0]} >/div/null 2>&1 && pwd)"
+path="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/div/null 2>&1 && pwd)"
 filename=$(basename "BASH_SOURCE")
 brown='\e[0;33m'
 reset='\033[0m'
